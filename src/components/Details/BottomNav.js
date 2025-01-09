@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "../../styles/NavBottom.module.css";
 import reset from "../../styles/Style.module.css";
 
@@ -10,7 +10,7 @@ const BottomNav = () => {
         { name: "mypage", path: "/Mypage", defaultImg: "/images/mypage.png", clickedImg: "/images/mypage-clicked.png" },
     ];
 
-    const [activeIcon, setActiveIcon] = useState("");
+    const location = useLocation();
 
     return (
         <div className={styles.navContainer}>
@@ -18,9 +18,9 @@ const BottomNav = () => {
                 <ul className={styles.ul}>
                     {icons.map((icon) => (
                         <li key={icon.name}>
-                            <Link to={icon.path} onClick={() => setActiveIcon(icon.name)}>
+                            <Link to={icon.path}>
                                 <img
-                                    src={activeIcon === icon.name ? icon.clickedImg : icon.defaultImg}
+                                    src={location.pathname === icon.path ? icon.clickedImg : icon.defaultImg}
                                     alt={icon.name}
                                 />
                             </Link>
