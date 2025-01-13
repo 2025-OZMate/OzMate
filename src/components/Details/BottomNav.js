@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "../../styles/NavBottom.module.css";
-import reset from "../../styles/Style.module.css";
 
 const BottomNav = () => {
     const icons = [

@@ -1,0 +1,19 @@
+.Questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(250px, 90%, 335px);
+    height: 220px;
+    border-radius: 12px;
+    background: #FFF;
+    margin: auto;
+}
+
+.Questions p {
+    font-size: 16px;
+}
+
+.Questions div {
+    font-size: 18px;
+}
