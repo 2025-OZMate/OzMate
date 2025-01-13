@@ -1,0 +1,28 @@
+.signContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.SignInButton,
+.SignUpButton {
+    display: flex;
+    width: 100%;
+    min-width: 335px;
+    padding: 13px 0px;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--primary-clor, #FFB600);
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.SignUpButton {
+    background: var(--FFF, #FFF);
+    margin-top: 12px;
+}
+
+.link {
+    color: #FFB600;
+    text-decoration: none;
+}
