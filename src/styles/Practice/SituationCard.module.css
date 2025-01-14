@@ -1,9 +1,3 @@
-.pageContainer {
-    background-color: white;
-    min-height: 100vh;
-    padding: 1px;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,8 +14,9 @@
 
 .card-container img {
     width: 100%;
-    max-width: 100px;
+    max-width: 140px;
     height: 140px;
+    border-radius: 12px;
 }
 
 .h3 {

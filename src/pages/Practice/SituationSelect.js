@@ -1,15 +1,15 @@
 import React from "react";
 import BackButton from "../../components/Details/BackButton";
-import SituationCard from "../../components/PracitceTest/SituationCard";
+import SituationCard from "../../components/PracitceTest/Speaking/SituationCard";
 import styles from "../../styles/Practice/SituationCard.module.css"
 
 const situations = [
-    { src: "/images/bookmark-clicked.png", place: "Resturant" },
-    { src: "/images/bookmark-clicked.png", place: "hospital" },
-    { src: "/images/bookmark-clicked.png", place: "Market" },
-    { src: "/images/bookmark-clicked.png", place: "School" },
-    { src: "/images/bookmark-clicked.png", place: "Street" },
-    { src: "/images/bookmark-clicked.png", place: "Hotel" },
+    { src: "/images/restaurant.png", place: "Resturant" },
+    { src: "/images/hospital.png", place: "hospital" },
+    { src: "/images/market.png", place: "Market" },
+    { src: "/images/school.png", place: "School" },
+    { src: "/images/street.png", place: "Street" },
+    { src: "/images/hotel.png", place: "Hotel" },
 ]
 
 const SituationSelect = () => {
