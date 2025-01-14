@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "../components/MainHome/banner";
-import Category from "../components/MainHome/Category";
-import InformationCard from "../components/MainHome/InformationCard";
+import Banner from "../components/Home/banner";
+import Category from "../components/Home/Category";
+import InformationCard from "../components/Home/InformationCard";
 import styles from "../styles/MainHome/Banner.module.css"
 
 
