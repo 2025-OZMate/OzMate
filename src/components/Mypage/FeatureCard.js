@@ -1,37 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import styles from "../../styles/Mypage/FeatureCard.module.css"
 import { useNavigate } from "react-router-dom";
-
-const Container = styled.div`
-display: flex;
-padding: 18px 0 18px 20px;
- 
- width: 335px;
-height: 62px;
-justify-content: space-between;
-align-items: center;
-margin-left : 20px;
-border-radius: 10px;
-background: var(--FFF, #FFF);
-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
-`
 
 const TitleStyle = styled.div`
 font-size: 14px;
 font-weight: 500;
 `
-
-export default function FeatureCard({ title, src }) {
+export default function FeatureCard({ title }) {
     const navigate = useNavigate();
+    const [showLogoutPopup, setShowLogoutPopup] = useState(false);
+
     const handleClick = () => {
-        navigate("/") //링크
+        const actions = {
+            "Log Out": () => setShowLogoutPopup(true),
+            "Bookmark List": () => navigate("/BookMark"),
+            "Change Language": () => navigate("/Language"),
+        };
+
+        actions[title]?.();
+    };
+
+
+    const handleClosePopup = () => {
+        setShowLogoutPopup(false);
+    };
+
+    const LogOutOk = () => { navigate("/Login") }
+    const NotLogOut = () => {
+        handleClosePopup();
+        navigate("/Mypage");
     }
+
+
     return (
-        <Container>
-            <TitleStyle>{title}</TitleStyle>
-            <img src="/images/next.png"
-                style={{ width: "26px", height: "24px", marginRight: "12px" }}
-                onClick={handleClick}></img>
-        </Container >
-    )
+        <div>
+            <div className={styles["container"]} onClick={handleClick}>
+                <TitleStyle>{title}</TitleStyle>
+                {title !== "Log Out" && (
+                    <img
+                        src="/images/next.png"
+                        style={{ width: "26px", height: "24px", marginRight: "12px" }}
+                        alt="next"
+                    />
+                )}
+            </div>
+
+            {/* 로그아웃 팝업 */}
+            {showLogoutPopup && (
+                <div className={styles["LogoPopup"]} LogoutPopup>
+                    <div className={styles["popup"]}>
+                        <p>Do you want to log out?</p>
+                        <p>You’ll need to log in again.</p>
+
+                        <div className={styles["select-container"]}>
+                            <div className={styles.cancel} onClick={NotLogOut}>Cancel</div>
+                            <div className={styles.ok} onClick={LogOutOk}>OK</div>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
 }

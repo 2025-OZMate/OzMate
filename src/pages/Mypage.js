@@ -11,7 +11,7 @@ const Mypage = () => {
             <div style={{ width: "100%", height: "12px", backgroundColor: "#FFF59D", margin: "20px 0" }}></div>
             <div style={{
                 display: "flex",
-                flexDirection: "column", // 세로로 배치
+                flexDirection: "column",
                 rowGap: "8px"
             }}>
                 {titles.map((item, index) => (<FeatureCard title={item} key={index} />))}
@@ -19,4 +19,4 @@ const Mypage = () => {
         </div>
     )
 }
-export default Mypage
+export default Mypage;
