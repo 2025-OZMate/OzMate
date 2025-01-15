@@ -1,0 +1,22 @@
+.container {
+    margin-top: 18px;
+    padding-left: 20px;
+    width: 100%;
+    max-width: 335px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.title {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.subTitle {
+    font-size: 13px;
+    font-weight: 300;
+}
