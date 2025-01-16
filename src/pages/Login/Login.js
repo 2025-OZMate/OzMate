@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "../../styles/Login/Login.module.css"
 import Logo from "../../components/Details/Logo"
-import SignInButton from "../../components/Login/SignInButton";
-import SignUpButton from "../../components/Login/SignUpButton"
 import Input from "../../components/Login/Input";
+import SignBtn from "../../components/Login/SignBtn";
+
 const Login = () => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/SignUP")
+    }
     return (
         <div className={styles.allContainer}>
             <Logo></Logo>
@@ -16,11 +21,17 @@ const Login = () => {
                 }}>
                     <Input placeholder={"E-mail"} type={"text"} />
                     <Input placeholder={"Password"} type={"password"} />
-                    <div className={styles.forgotPassword}><Link to={"/Find"}>Forgot Password</Link ></div>
                 </div>
 
-                <SignInButton></SignInButton>
-                <SignUpButton></SignUpButton>
+                <div style={{
+                    display: "flex", flexDirection: "column", rowGap: "12px", position: "absolute",
+                    top: "80%"
+                }}>
+
+                    <SignBtn page={"/Home"} title={"SIGN IN"} />
+                    <div onClick={handleClick} className={styles.signup}>SIGN UP</div>
+                </div>
+
             </form >
         </div >
     );
