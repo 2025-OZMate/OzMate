@@ -7,7 +7,6 @@ export default function Language() {
     const [activeLanguage, setActiveLanguage] = useState(null);
     const handleToggle = (language) => {
         setActiveLanguage((prev) => (prev === language ? null : language))
-
     }
 
     return (

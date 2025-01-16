@@ -15,7 +15,6 @@ function InformationCard({ src, title, subTitle, type }) {
 
                 <div className={styles.typeContainer}>
                     <span className={styles["type"]}>{type}</span>
-                    <div><img src="/images/bookmark.png"></img></div>
                 </div>
             </div>
         </div>

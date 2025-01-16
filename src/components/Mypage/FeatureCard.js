@@ -4,9 +4,11 @@ import styles from "../../styles/Mypage/FeatureCard.module.css"
 import { useNavigate } from "react-router-dom";
 
 const TitleStyle = styled.div`
-font-size: 14px;
-font-weight: 500;
-`
+    font-size: 14px;
+    font-weight: 500;
+    color: ${({ title }) => (title === "Log Out" ? "red" : "black")};
+`;
+
 export default function FeatureCard({ title }) {
     const navigate = useNavigate();
     const [showLogoutPopup, setShowLogoutPopup] = useState(false);
@@ -21,7 +23,6 @@ export default function FeatureCard({ title }) {
         actions[title]?.();
     };
 
-
     const handleClosePopup = () => {
         setShowLogoutPopup(false);
     };
@@ -32,11 +33,10 @@ export default function FeatureCard({ title }) {
         navigate("/Mypage");
     }
 
-
     return (
         <div>
             <div className={styles["container"]} onClick={handleClick}>
-                <TitleStyle>{title}</TitleStyle>
+                <TitleStyle title={title}>{title}</TitleStyle>
                 {title !== "Log Out" && (
                     <img
                         src="/images/next.png"

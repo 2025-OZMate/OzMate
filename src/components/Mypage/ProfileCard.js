@@ -8,7 +8,7 @@ function profileCard({ useName }) {
         }}>
             <img src="/images/profile.png" style={{ width: "80px", height: "80px", }}></img>
 
-            <div style={{ textAlign: "center", fontSize: "17px" }}>Jin</div>
+            <div style={{ textAlign: "center", fontSize: "17px" }}>{useName}</div>
         </div>
     )
 }
