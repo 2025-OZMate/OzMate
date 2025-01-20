@@ -4,7 +4,7 @@ import TitleHeader from "../../components/Mypage/titleHeader";
 import LanguageToggle from "../../components/Mypage/LanguageToggle";
 
 export default function Language() {
-    const [activeLanguage, setActiveLanguage] = useState(null);
+    const [activeLanguage, setActiveLanguage] = useState("English");
     const handleToggle = (language) => {
         setActiveLanguage((prev) => (prev === language ? null : language))
     }
