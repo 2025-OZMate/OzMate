@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../styles/Practice/Result.module.css"
-const Result = ({ imgsrc, correct, explanation, next, btnTitle, classTitle }) => {
+const Result = ({ imgsrc, correct, explanation, next, btnTitle, classTitle, explainStyle }) => {
     return (
         <div className={styles["all-container"]}>
             <div className={styles["img-container"]}>
@@ -8,7 +8,7 @@ const Result = ({ imgsrc, correct, explanation, next, btnTitle, classTitle }) =>
             </div>
             <div className={styles["explain-container"]}>
                 <h3>{correct}</h3>
-                <p>{explanation}</p>
+                <p className={styles[explainStyle]}>{explanation}</p>
             </div>
             <button onClick={next}>{btnTitle}</button>
         </div>

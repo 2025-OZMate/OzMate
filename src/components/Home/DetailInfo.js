@@ -45,6 +45,9 @@ export default function DetailInfo() {
                     <div key={index} className={styles.detailItem}>
                         <p className={styles.title}>{item.title}</p>
                         <p className={styles.subTitle}>{item.subTitle}</p>
+                        <div>
+                            <img src=""></img>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -5,7 +5,7 @@ function Card({ subject, title, description, navigateTo }) {
     const navigate = useNavigate()
 
     const handleNext = () => {
-        if (subject === "English practice") { navigate("/SituationSelect") }
+        if (subject === "English practice") { navigate("/Translation") }
         if (subject === "Quiz") { navigate("/Quiz") }
     }
     return (

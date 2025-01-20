@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/PracitceTest/Card"
 const titles = [
-    { subject: "English practice", title: "Conversation practice", description: "You can learn expressions" },
+    { subject: "English practice", title: "English translation practice", description: "You can learn expressions" },
     { subject: "Quiz", title: "Australian Culture Quiz", description: "You can take fun quizzes about Australia!" },
 ]
 

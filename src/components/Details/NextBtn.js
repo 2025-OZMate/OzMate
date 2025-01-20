@@ -21,10 +21,10 @@ const Button = styled.button`
  
 `;
 
-export default function NextBtn({ text }) {
-    return (
-        <Container>
-            <Button>{text}</Button>
-        </Container>
-    );
+export default function NextBtn({ text, type, onClick }) {
+  return (
+    <Container>
+      <Button type={type} onClick={onClick}>{text}</Button>
+    </Container>
+  );
 }
