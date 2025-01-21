@@ -11,7 +11,7 @@ const Test = () => {
             <div style={{
                 display: "flex",
                 justifyContent: "center",
-                marginTop: "16px"
+                marginTop: "63px"
             }}>
                 <img src="/images/logo.png" style={{ width: "100px", height: "24px" }}></img>
             </div>

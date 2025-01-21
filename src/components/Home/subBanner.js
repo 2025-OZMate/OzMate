@@ -6,7 +6,7 @@ export default function SubBanner() {
 
     return (
         <div>
-            <img src="/images/sub-train.png" style={{ height: "280px" }}></img>
+            <img src="/images/card.png" style={{ height: "280px" }}></img>
             <div style={{
                 position: "absolute",
                 top: "3%"

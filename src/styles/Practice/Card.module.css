@@ -33,8 +33,7 @@
 .next {
     display: flex;
     justify-content: flex-end;
-    padding: 7px 20px 0 0;
-
+    margin: 6px 20px 8px 0
 }
 
 .cardContainer img {

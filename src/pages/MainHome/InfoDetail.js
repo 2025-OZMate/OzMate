@@ -47,6 +47,8 @@ export default function InfoDetail() {
         <BackColor>
             <SubBanner />
             <ScrollContainer>
+
+
                 <DetailInfo />
                 <div style={{ height: "12px", width: "100%", backgroundColor: "#FFF59D", margin: "20px 0" }}></div>
                 <div style={{ paddingLeft: "20px", fontSize: "24px", fontWeight: "500", marginBottom: "20px" }}>Other information</div>

@@ -8,6 +8,7 @@ const ProgressContainer = styled.div`
   border-radius: 10px;
   padding : 3px 0 3px 3px;
   margin: 20px 0;
+  margin-top: 25px;
 `;
 
 
