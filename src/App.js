@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BookmarkProvider } from "./context/BookmarkContext";
+import Index from "./pages";
 import Login from "../src/pages/Login/Login";
+import SignUp from "../src/pages/Login/SignUp"
 import Test from "../src/pages/Test";
 import Home from "../src/pages/Home";
-import SituationSelect from "./pages/Practice/SituationSelect";
 import Mypage from "../src/pages/Mypage";
 import BottomNav from "../src/components/Details/BottomNav";
+import Translation from "./pages/Practice/Translation";
 import Quiz from "./pages/Practice/Quiz";
-import Speak from "./pages/Practice/Speak";
-import CorrectPage from "./pages/Practice/CorrectPage";
 import InfoDetail from "./pages/MainHome/InfoDetail";
 import BookMark from "./pages/Mypage/BookMark";
 import Language from "./pages/Mypage/Language";
@@ -24,19 +25,20 @@ const App = () => {
 
 const Main = () => {
   const location = useLocation();
-  const hideBottomNavPaths = ["/Login", "/Quiz", "/SituationSelect", "/CorrectPage", "/InfoDetail", "/BookMark", "/Language"];
+  const hideBottomNavPaths = ["/Login", "/SignUP", "/Quiz", "/SituationSelect", "/CorrectPage", "/InfoDetail", "/BookMark", "/Language", "/Index", "/Translation"];
 
   return (
+
     <>
       <Routes>
+        <Route path="Index" element={<Index />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Test" element={<Test />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Mypage" element={<Mypage />} />
-        <Route path="/SituationSelect" element={<SituationSelect />} />
         <Route path="/Quiz" element={<Quiz />} />
-        <Route path="/Speak" element={<Speak />} />
-        <Route path="/CorrectPage" element={<CorrectPage />} />
+        <Route path="/Translation" element={<Translation />} />
         <Route path="/InfoDetail" element={<InfoDetail />} />
         <Route path="/BookMark" element={<BookMark />} />
         <Route path="/Language" element={<Language />} />
