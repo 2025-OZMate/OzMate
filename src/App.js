@@ -1,9 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { BookmarkProvider } from "./context/BookmarkContext";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Index from "./pages";
 import Login from "../src/pages/Login/Login";
-import SignUp from "../src/pages/Login/SignUp"
+import SignUp from "../src/pages/Login/SignUp";
 import Test from "../src/pages/Test";
 import Home from "../src/pages/Home";
 import Mypage from "../src/pages/Mypage";
@@ -25,18 +29,28 @@ const App = () => {
 
 const Main = () => {
   const location = useLocation();
-  const hideBottomNavPaths = ["/Login", "/SignUP", "/Quiz", "/SituationSelect", "/CorrectPage", "/InfoDetail", "/BookMark", "/Language", "/Index", "/Translation"];
+  const hideBottomNavPaths = [
+    "/Login",
+    "/SignUp",
+    "/Quiz",
+    "/SituationSelect",
+    "/CorrectPage",
+    "/InfoDetail",
+    "/BookMark",
+    "/Language",
+    "/Index",
+    "/Translation",
+  ];
 
   return (
-
     <>
       <Routes>
         <Route path="Index" element={<Index />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Test" element={<Test />} />
         <Route path="/Home" element={<Home />} />
-        <Route path="/Mypage" element={<Mypage />} />
+        <Route path="/Test" element={<Test />} />
+        <Route path="/MyPage" element={<Mypage />} />
         <Route path="/Quiz" element={<Quiz />} />
         <Route path="/Translation" element={<Translation />} />
         <Route path="/InfoDetail" element={<InfoDetail />} />
