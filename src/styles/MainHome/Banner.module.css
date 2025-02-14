@@ -41,7 +41,6 @@
   color: var(--777, #777);
   font-size: 12px;
   padding: 2px 17px;
-  width: 76px;
   height: 24px;
   border-radius: 16px;
   background: var(--FFF, #fff);
@@ -58,6 +57,7 @@
   overflow-y: scroll;
   max-height: 280px;
 }
+
 .card-container::-webkit-scrollbar-track {
   background: transparent;
 }
