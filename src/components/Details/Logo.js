@@ -6,9 +6,9 @@ export default function Logo() {
             <img src="/images/logo.png" alt="Logo"
                 style={{
                     width: "162.587px",
-                    height: "40px",
-                    marginBottom: "80px",
-                    margin: "200px 0 80px 0"
+                    display: "flex",
+                    justifyContent: "center",
+                    margin: "175px auto 80px auto"
                 }}
             />
         </div>
