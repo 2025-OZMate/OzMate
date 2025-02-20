@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import ProfileCard from "../components/Mypage/ProfileCard";
@@ -6,14 +6,24 @@ import FeatureCard from "../components/Mypage/FeatureCard";
 
 const titles = ["Bookmark List", "Change Language", "Log Out"];
 
-const Mypage = () => {
-  // localStorage에서 username을 불러옴
-  const username = localStorage.getItem("username") || "Guest";
+export default function Mypage() {
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser)); // localStorage에서 user 정보 가져오기
+    }
+  }, []);
+
 
 
   return (
     <div>
-      <ProfileCard useName={username} />
+      {/* 사용자 정보가 있을 경우에만 표시 */}
+      <ProfileCard useName={user ? user.username : "Guest"} />
+
       <div
         style={{
           width: "100%",
@@ -22,6 +32,7 @@ const Mypage = () => {
           margin: "20px 0",
         }}
       ></div>
+
       <div
         style={{
           display: "flex",
@@ -30,11 +41,14 @@ const Mypage = () => {
         }}
       >
         {titles.map((item, index) => (
-          <FeatureCard title={item} key={index} />
+          <FeatureCard
+            title={item}
+            key={index}
+          />
         ))}
       </div>
     </div>
   );
 };
 
-export default Mypage;
+
