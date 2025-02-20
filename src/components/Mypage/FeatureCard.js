@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import styles from "../../styles/Mypage/FeatureCard.module.css";
 import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next"; // useTranslation으로 변경
+import { useTranslation } from "react-i18next";
 
 const TitleStyle = styled.div`
   font-size: 14px;
@@ -13,7 +13,7 @@ const TitleStyle = styled.div`
 export default function FeatureCard({ title }) {
   const navigate = useNavigate();
   const [showLogoutPopup, setShowLogoutPopup] = useState(false);
-  const { t } = useTranslation(); // useTranslation 훅으로 번역을 가져옵니다.
+  const { t } = useTranslation();
 
   const handleClick = () => {
     const actions = {
@@ -25,7 +25,7 @@ export default function FeatureCard({ title }) {
     if (actions[title]) {
       actions[title](); // title에 해당하는 함수가 존재하면 실행
     } else {
-      console.warn(`No action defined for title: ${title}`); // action이 없으면 경고 출력
+      console.warn(`No action defined for title: ${title}`);
     }
   };
 
@@ -33,7 +33,10 @@ export default function FeatureCard({ title }) {
     setShowLogoutPopup(false);
   };
 
+  //로그아웃
   const LogOutOk = () => {
+    localStorage.removeItem("token")
+    localStorage.removeItem("user")
     navigate("/Login");
   };
 
