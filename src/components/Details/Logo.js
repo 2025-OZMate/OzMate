@@ -8,7 +8,7 @@ export default function Logo() {
                     width: "162.587px",
                     height: "40px",
                     marginBottom: "80px",
-                    margin: "175px 0 80px 0"
+                    margin: "200px 0 80px 0"
                 }}
             />
         </div>

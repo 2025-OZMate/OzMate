@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+
 import ProfileCard from "../components/Mypage/ProfileCard";
 import FeatureCard from "../components/Mypage/FeatureCard";
 
@@ -8,6 +9,7 @@ const titles = ["Bookmark List", "Change Language", "Log Out"];
 const Mypage = () => {
   // localStorage에서 username을 불러옴
   const username = localStorage.getItem("username") || "Guest";
+
 
   return (
     <div>

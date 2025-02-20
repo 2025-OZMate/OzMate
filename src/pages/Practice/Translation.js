@@ -75,8 +75,9 @@ export default function Translation() {
 
   return (
     <div className={styles["all-container"]}>
-      <div style={{ display: "flex", columnGap: "8px" }}>
-        <BackButton />
+      <div style={{ display: "flex", columnGap: "8px", padding: "0 20px 29px 20px" }}>
+        <img src="/images/prev.png" onClick={() => navigate(-1)}
+          style={{ width: "40px", height: "40px", marginTop: "14px" }}></img>
         <ProgressBar
           currentQuestion={currentQuestion}
           questionsLength={questions.length}
@@ -118,15 +119,9 @@ export default function Translation() {
         )}
 
         <form onSubmit={handleSubmit} className={styles["form-container"]}>
-          <div
-            className={styles["inputContainer"]}
-            style={{
-              marginBottom: isCorrect === false ? "168px" : "236px",
-            }}
-          >
+          <div className={styles["inputContainer"]}>
             <input
-              type="text"
-              value={userInput}
+              type="text" value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
               placeholder="Please enter the correct answer as text."
               style={{
@@ -134,26 +129,33 @@ export default function Translation() {
                   isCorrect === null
                     ? "1px solid #FFB600"
                     : isCorrect
-                    ? "1px solid var(--2CE32C, #2CE32C)"
-                    : "1px solid var(--FF0, #F00)",
+                      ? "1px solid var(--2CE32C, #2CE32C)"
+                      : "1px solid var(--FF0, #F00)",
               }}
               required
             />
           </div>
-          {isCorrect === null && <NextBtn text={"OK"} type={"submit"} />}
+
+          <div className={styles.OkBtn}>
+            {isCorrect === null && <NextBtn text={"OK"} type={"submit"} />}
+          </div>
         </form>
 
         {isCorrect !== null && (
           <div>
-            {isCorrect === false && (
-              <NextBtn
-                text={"Retry"}
-                type={"button"}
-                onClick={handleRetry}
-                variant={"Retry"}
-              />
-            )}
-            <NextBtn text={"Next"} type={"button"} onClick={handleNext} />
+            <div className={styles.RetryBtn}>
+              {isCorrect === false && (
+                <NextBtn
+                  text={"Retry"}
+                  type={"button"}
+                  onClick={handleRetry}
+                  variant={"Retry"}
+                />
+              )}
+            </div>
+            <div className={styles.OkBtn}>
+              <NextBtn text={"Next"} type={"button"} onClick={handleNext} />
+            </div>
           </div>
         )}
       </div>

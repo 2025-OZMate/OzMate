@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const types = ["ALL", "POLICY", "LIFE"];
-  const [informations, setInformations] = useState([]);
-  const [filteredInformations, setFilteredInformations] = useState([]);
+  const [allRecommendations, setAllRecommendations] = useState([]);  // 전체 데이터 저장
+  const [filteredRecommendations, setFilteredRecommendations] = useState([]);  // 필터링된 데이터
   const [activeCategory, setActiveCategory] = useState("ALL");
 
   const navigate = useNavigate();
@@ -17,28 +17,24 @@ const Home = () => {
     fetch("/data/recommend.json")
       .then((response) => response.json())
       .then((data) => {
-        setInformations(data);
-        setFilteredInformations(data); //모든 데이터
+        setAllRecommendations(data);
+        setFilteredRecommendations(data);  // 초기에는 전체 데이터를 보여줌
       })
-      .catch((error) => console.error("error발생", error));
+      .catch((error) => console.error("Error loading recommendations", error));
   }, []);
 
-  //카테고리
   const handleCategoryClick = (type) => {
     setActiveCategory(type);
+
     if (type === "ALL") {
-      setFilteredInformations(informations);
+      setFilteredRecommendations(allRecommendations); // 전체 데이터 다시 보여주기
     } else {
-      setFilteredInformations(
-        informations.filter((item) => item.category === type)
-      );
+      setFilteredRecommendations(allRecommendations.filter((item) => item.category === type));
     }
   };
 
-  const handleCardClick = (index) => {
-    if (index === 0) {
-      navigate("/InfoDetail");
-    }
+  const handleCardClick = (id) => {
+    navigate(`/detail/${id}`);
   };
 
   return (
@@ -55,13 +51,10 @@ const Home = () => {
         ))}
       </div>
 
+      {/* 필터링된 추천 카드 표시 */}
       <div className={styles["card-container"]}>
-        {filteredInformations.map((item, index) => (
-          <div
-            key={index}
-            onClick={() => handleCardClick(index)}
-            style={{ width: "100%" }}
-          >
+        {filteredRecommendations.map((item) => (
+          <div key={item.id} onClick={() => handleCardClick(item.id)} style={{ width: "100%" }}>
             <InformationCard
               src={item.thumbnail}
               title={item.title}

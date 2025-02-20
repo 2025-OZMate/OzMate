@@ -22,7 +22,7 @@ function BackButton({ customNavigate, imgSrc = "/images/prev.png" }) {
     };
 
     return (
-        <div className={styles.BackButton} onClick={handleBack}>
+        <div className={styles.BackButton} onClick={() => navigate(-1)}>
             <img src={imgSrc}></img>
         </div>
     );

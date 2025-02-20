@@ -20,10 +20,12 @@ const Result = ({
           <h3>{correct}</h3>
           <p className={styles[explainStyle]}>{explanation}</p>
         </div>
-      </div>
 
-      <div style={{ padding: "0 20px" }}>
-        <button onClick={next}>{btnTitle}</button>
+
+
+        <div className={styles.Btn} onClick={next}>{btnTitle}</div>
+
+
       </div>
     </div>
   );

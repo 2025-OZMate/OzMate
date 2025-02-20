@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ProgressContainer = styled.div`
-  width: 100%;
-  max-width: 287px;
+  width: 100%; 
   background-color: #FFF59D;
   border-radius: 10px;
   padding : 3px 0 3px 3px;

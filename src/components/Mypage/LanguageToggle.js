@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../../styles/Mypage/LanguageToggle.module.css";
 
 export default function LanguageToggle({ language, isActive, onToggle }) {

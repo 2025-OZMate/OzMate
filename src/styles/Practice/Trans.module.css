@@ -49,9 +49,10 @@
   background: var(--03, #fff59d);
   font-size: 12px;
   height: 34px;
+  white-space: nowrap;
 }
 
-.block-container,
+
 .emoji-container {
   display: flex;
   justify-content: center;
@@ -59,8 +60,10 @@
 }
 
 .block-container {
-  width: 340px;
-  height: 144px;
+  display: flex;
+}
+
+.block-container {
   padding: 55px 3px;
 }
 
@@ -83,7 +86,6 @@
 .inputContainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 236px;
 }
 
 .correct {
@@ -103,4 +105,20 @@
   margin: 54px auto -26px auto;
   width: 80px;
   height: 119px;
+}
+
+.OkBtn,
+.RetryBtn {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.OkBtn {
+  bottom: 40px;
+}
+
+.RetryBtn {
+  bottom: 13.8vh;
 }
