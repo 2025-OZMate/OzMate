@@ -19,7 +19,7 @@ export default function Registe() {
         } catch (error) {
             if (error.response) {
                 alert("Password does not match.");
-                setForm({ ...form, passwordConfirm: "" })
+                // setForm({ ...form, passwordConfirm: "" })
             } else if (error.request) {
                 alert("서버로 요청을 보낼 수 없습니다.");
             } else {

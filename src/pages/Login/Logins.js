@@ -27,7 +27,7 @@ export default function Login() {
             window.location.href = "/Home";
         } catch (error) {
             alert("User not found.");
-            setForm({ userid: "", password: "" })
+            // setForm({ userid: "", password: "" })
         }
     };
 
