@@ -36,7 +36,7 @@ router.post("/register", async (req, res) => {
 // 로그인 API
 router.post("/login", async (req, res) => {
     try {
-        const { username, userid, password } = req.body;
+        const { userid, password } = req.body;
         const user = await User.findOne({ userid });
 
         if (!user) return res.status(400).json({ message: "User not found." });
@@ -44,21 +44,15 @@ router.post("/login", async (req, res) => {
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) return res.status(400).json({ message: "Password does not match" });
 
-        //username 검증
-        if (user.username !== username) {
-            return res.status(400).json({
-                message: "The names do not match."
-            })
-        }
-
         const token = jwt.sign({ userid: user.userid }, "secretKey", { expiresIn: "1h" });
         res.json({
             token,
-            user: { username: user.username, userid: user.userid }
+            user: { username: user.username, userid: user.userid, _id: user._id }
         });
     } catch (error) {
         res.status(500).json({ message: "로그인 실패", error });
     }
 });
+
 
 module.exports = router;

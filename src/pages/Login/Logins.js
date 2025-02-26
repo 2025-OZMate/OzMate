@@ -23,8 +23,12 @@ export default function Login() {
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("user", JSON.stringify(res.data.user)); //사용자 정보 저장
 
+            //objectId 저장
+            const userObjectId = res.data.user._id;
+            localStorage.setItem("userObjectId", userObjectId)
+
             //alert("Login successful!");
-            window.location.href = "/Home";
+            navigate('/Home')
         } catch (error) {
             alert("User not found.");
             // setForm({ userid: "", password: "" })

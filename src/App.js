@@ -52,7 +52,7 @@ const Main = () => {
     <>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/Login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/detail/:id" element={<DetailInfo />} />
