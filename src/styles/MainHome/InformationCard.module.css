@@ -45,3 +45,8 @@
   width: 19px;
   height: 20px;
 }
+
+.bookmark {
+  background: none;
+  padding-right: 20px;
+}

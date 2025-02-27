@@ -2,14 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 81px;
+}
+
+.contentContainer {
   padding: 0 20px;
+}
+
+.bannerLogoImg {
+  width: 39px;
+  height: 32px;
+  margin: 9px 0 40px;
+}
+
+.quizBannerImg {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  height: 300px;
 }
 
 .question-container {
   display: flex;
   width: 100%;
-  padding: 20px 26px 68px 27px;
+  padding: 40px 26px 68px 27px;
   flex-direction: column;
   align-items: center;
   gap: 36px;
@@ -19,10 +34,10 @@
 }
 
 .question-container h3 {
-  color: #000;
+  color: #FF9E00;
   text-align: center;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .question-container span {
@@ -43,7 +58,7 @@
 
 .choice {
   display: flex;
-
+  border: 1.5px solid #FFB600;
   height: 60px;
   justify-content: center;
   align-items: center;
