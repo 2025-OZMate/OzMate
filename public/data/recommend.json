@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "thumbnail": "/images/card.png",
+        "title": "Types of Cards",
+        "subTitle": "Information on various transportation cards used in Australia",
+        "category": "LIFE"
+    },
+    {
+        "id": 2,
+        "thumbnail": "/images/dish.png",
+        "title": "Etiquette you need to know",
+        "subTitle": "How to reduce cultural differences and become friends with local people",
+        "category": "LIFE"
+    },
+    {
+        "id": 3,
+        "thumbnail": "/images/blue-visa.png",
+        "title": "494 Visa",
+        "subTitle": "5-year temporary visa issued through local employer sponsorship.",
+        "category": "POLICY"
+    },
+    {
+        "id": 4,
+        "thumbnail": "/images/seasons.png",
+        "title": "Australia's Seasons",
+        "subTitle": "Perfectly Adapting to Seasonal Characteristics",
+        "category": "LIFE"
+    },
+    {
+        "id": 5,
+        "thumbnail": "/images/visa.png",
+        "title": "189 Visa",
+        "subTitle": "Permanent resident visa applicable solely based on personal scores, no sponsorship.",
+        "category": "POLICY"
+    },
+    {
+        "id": 6,
+        "thumbnail": "/images/food.png",
+        "title": "Australia's food",
+        "subTitle": "Typical foods you must try when visiting Australia",
+        "category": "LIFE"
+    },
+    {
+        "id": 7,
+        "thumbnail": "/images/visa.png",
+        "title": "190 Visa",
+        "subTitle": "A permanent permanent resident visa that can be applied for with state sponsorship.",
+        "category": "POLICY"
+    },
+    {
+        "id": 8,
+        "thumbnail": "/images/woolworth.jpg",
+        "title": "Australian Supermarkets",
+        "subTitle": "Shopping Smartly at Australian Supermarkets: Tips for Finding",
+        "category": "LIFE"
+    },
+    {
+        "id": 9,
+        "thumbnail": "/images/blue-visa.png",
+        "title": "482 Visa",
+        "subTitle": "Temporary skilled visa issued under employer sponsorship.",
+        "category": "POLICY"
+    },
+    {
+        "id": 10,
+        "thumbnail": "/images/health-care.jpg",
+        "title": "Healthcare & Pharmacies in Australia",
+        "subTitle": "Navigating Healthcare & Pharmacies",
+        "category": "LIFE"
+    },
+    {
+        "id": 11,
+        "thumbnail": "/images/visa.png",
+        "title": "189 Visa",
+        "subTitle": "permanent residency visa for skilled workers who meet specific criteria.",
+        "category": "POLICY"
+    },
+    {
+        "id": 12,
+        "thumbnail": "/images/working.jpg",
+        "title": "Working in Australia",
+        "subTitle": "Navigating the Australian Job Market: Essential Tips for Finding Employment",
+        "category": "LIFE"
+    },
+    {
+        "id": 13,
+        "thumbnail": "/images/blue-visa.png",
+        "title": "491 Visa",
+        "subTitle": "5-year temporary visa that can be applied for with local sponsorship",
+        "category": "POLICY"
+    },
+    {
+        "id": 14,
+        "thumbnail": "/images/visa.png",
+        "title": "186 Visa",
+        "subTitle": "Permanent permanent resident visa issued through employer sponsorship.",
+        "category": "POLICY"
+    }
+]

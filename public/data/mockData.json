@@ -1,0 +1,331 @@
+[
+    {
+        "id": 1,
+        "subject": "test1",
+        "mainTitle": "Types of Transportation Cards in Australia",
+        "details": [
+            {
+                "title": "Opal Card (New South Wales)",
+                "subTitle": "Used in Sydney, the Blue Mountains, and surrounding areas."
+            },
+            {
+                "title": "Myki Card (Victoria)",
+                "subTitle": "Used in Melbourne and nearby regions."
+            },
+            {
+                "title": "Go Card (Queensland)",
+                "subTitle": "Used in Brisbane and the Gold Coast."
+            },
+            {
+                "title": "How to Use Transportation Cards",
+                "subTitle": "Purchase: Easily available at train stations, convenience stores, or online."
+            },
+            {
+                "title": "",
+                "subTitle": "Top-up: Recharge using machines or mobile apps."
+            },
+            {
+                "title": "",
+                "subTitle": "Usage: Simply tap your transportation card on the terminal (Tap on/Tap off), and the fare will be automatically calculated."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "mainTitle": "Etiquette",
+        "details": [
+            {
+                "title": "Queuing Etiquette",
+                "subTitle": "Lining up is a basic rule of etiquette in Australia."
+            },
+            {
+                "title": " No Tipping Culture",
+                "subTitle": "Tipping is not expected in Australia. "
+            },
+            {
+                "title": "Speaking Quietly in Public",
+                "subTitle": "Speaking too loudly in public places like buses, trains, and cafes can be seen as impolite. "
+            },
+            {
+                "title": "Sharing Food Culture",
+                "subTitle": "In Australia, even among close friends, taking food from someone else's plate without permission is considered impolite."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "mainTitle": "494",
+        "details": [
+            {
+                "title": "Regional Employment Requirement",
+                "subTitle": "The 494 visa requires the applicant to work in a designated regional area of Australia, which excludes major cities."
+            },
+            {
+                "title": "Autumn (March–May)",
+                "subTitle": "Brings cooler weather and beautiful autumn foliage, especially in places like Melbourne and Tasmania."
+            },
+            {
+                "title": "Employer Sponsorship",
+                "subTitle": "Applicants must have a job offer from an Australian employer who is willing to sponsor them. "
+            },
+            {
+                "title": "Skilled Occupation",
+                "subTitle": "The applicant must work in an occupation listed on Australia's approved skills list."
+            },
+            {
+                "title": "Temporary Visa with Pathway to Permanent Residency",
+                "subTitle": "The 494 visa is a temporary visa valid for 5 years."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "mainTitle": "Types of Transportation Cards in Australia",
+        "details": [
+            {
+                "title": "Summer (December–February)",
+                "subTitle": "Summer is characterized by high temperatures and strong sunlight, making it an ideal season for beach activities like swimming and surfing. "
+            },
+            {
+                "title": "Autumn (March–May)",
+                "subTitle": "Brings cooler weather and beautiful autumn foliage, especially in places like Melbourne and Tasmania."
+            },
+            {
+                "title": "Go Card (Queensland)",
+                "subTitle": "Used in Brisbane and the Gold Coast."
+            },
+            {
+                "title": "Winter (June–August) ",
+                "subTitle": "While the southern regions experience cold temperatures, the north, including Queensland and Darwin, remains relatively warm. "
+            },
+            {
+                "title": "",
+                "subTitle": " The ski season starts in the mountainous areas of New South Wales and Victoria."
+            },
+            {
+                "title": "Spring (September–November)",
+                "subTitle": "Spring sees rising temperatures and blooming flowers, with Canberra’s Floriade Festival being a major attraction. "
+            },
+            {
+                "title": "",
+                "subTitle": "Outdoor activities such as hiking, camping, and picnicking become more popular. "
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "mainTitle": "189 visa",
+        "details": [
+            {
+                "title": "Independent Visa",
+                "subTitle": "The 189 visa is an independent visa that can be applied for without employer or family sponsorship"
+            },
+            {
+                "title": "Skilled Occupation",
+                "subTitle": "Applicants must work in an occupation listed on Australia's approved skills list."
+            },
+            {
+                "title": "Permanent Residency Visa",
+                "subTitle": "The 189 visa grants permanent residency, allowing holders to live, work, and study in Australia indefinitely."
+            },
+            {
+                "title": "Points-Based System",
+                "subTitle": "Applicants must meet the required points threshold."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "mainTitle": "Australia's food",
+        "details": [
+            {
+                "title": "Meat Pie",
+                "subTitle": "It is one of the most popular snacks in Australia, featuring a crispy pastry filled with minced meat and gravy."
+            },
+            {
+                "title": "Vegemite Toast",
+                "subTitle": "Vegemite Toast is a staple breakfast item in Australia."
+            },
+            {
+                "title": "BBQ Culture",
+                "subTitle": "BBQ Culture is an essential part of Australian life, with various meats and seafood"
+            },
+            {
+                "title": "Chicken Parmigian",
+                "subTitle": "It is typically served with fries and a side salad and is especially popular in Victoria."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "mainTitle": "190 Visa",
+        "details": [
+            {
+                "title": "State or Territory Nomination",
+                "subTitle": "The 190 visa requires nomination by a state."
+            },
+            {
+                "title": "Permanent Residency Visa",
+                "subTitle": "This visa grants permanent residency, allowing holders to live, work."
+            },
+            {
+                "title": "Skilled Occupation",
+                "subTitle": "Applicants must work in an occupation listed on Australia’s skilled occupation list. "
+            },
+            {
+                "title": "Points-Based System",
+                "subTitle": "The 190 visa operates on a points-based system. "
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "mainTitle": "Australian Supermarkets",
+        "details": [
+            {
+                "title": "Coles",
+                "subTitle": "Coles is known for its stable product quality and regular discount events. Customers can earn Flybuys points, which are redeemable for future savings. While prices are on the higher end, the store's consistent promotions make it a good option for regular shoppers."
+            },
+            {
+                "title": "Woolworths",
+                "subTitle": "Woolworths offers high-quality fresh produce and has a loyalty program called Everyday Rewards, which gives you discounts on future purchases. While some products can be more expensive than Coles, Woolworths makes up for it with premium items and great weekly specials."
+            },
+            {
+                "title": "Aldi",
+                "subTitle": "Aldi focuses on budget-friendly options, offering mainly private-label products. The store is known for its competitive prices, and the checkout process is quick. "
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "mainTitle": "482 Visa",
+        "details": [
+            {
+                "title": "Employer Sponsorship",
+                "subTitle": "The 482 visa requires sponsorship from an Australian employer. "
+            },
+            {
+                "title": "Temporary Visa",
+                "subTitle": "his visa is temporary, typically valid for 2 to 4 years."
+            },
+            {
+                "title": "Skilled Occupation",
+                "subTitle": "The applicant must work in an occupation listed on Australia’s skilled occupation list."
+            },
+            {
+                "title": "Pathway to Permanent Residency",
+                "subTitle": "After holding the 482 visa for a period."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "mainTitle": "Healthcare & Pharmacies in Australia",
+        "details": [
+            {
+                "title": "Medicare & Walk-in Clinics",
+                "subTitle": "Medicare is available for eligible residents, providing free or low-cost medical services, including visits to doctors and hospitals."
+            },
+            {
+                "title": "Buying Medicine at Pharmacies",
+                "subTitle": "Common over-the-counter medications like Panadol (pain relief) and Telfast (allergy relief) can be bought without a prescription at pharmacies. "
+            },
+            {
+                "title": "Handling Emergencies",
+                "subTitle": "For life-threatening emergencies, dial 000 for an ambulance."
+            },
+            {
+                "title": "Accessing Healthcare Services",
+                "subTitle": "Australia offers Medicare and walk-in clinics for affordable medical care."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "mainTitle": "189 Visa",
+        "details": [
+            {
+                "title": "Independent Visa",
+                "subTitle": "The 189 visa is an independent visa that can be applied for without employer or family sponsorship."
+            },
+            {
+                "title": "Skilled Occupation",
+                "subTitle": "Applicants must work in an occupation listed on Australia's approved skills list. "
+            },
+            {
+                "title": "Permanent Residency Visa",
+                "subTitle": "The 189 visa grants permanent residency, allowing holders to live, work, and study in Australia indefinitely."
+            },
+            {
+                "title": "Points-Based System",
+                "subTitle": "Applicants must meet the required points threshold, and higher-scoring candidates are given priority."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "mainTitle": "Working in Australia",
+        "details": [
+            {
+                "title": "TFN & ABN Registration",
+                "subTitle": "To legally work in Australia, you need a Tax File Number (TFN). "
+            },
+            {
+                "title": "Job Search & Resume Tips",
+                "subTitle": "Job-seeking websites like SEEK, Indeed, and Gumtree are great tools for finding work in Australia. "
+            },
+            {
+                "title": "Workplace Etiquette & Minimum Wage",
+                "subTitle": "The national minimum wage is approximately $23 per hour."
+            },
+            {
+                "title": "Rights & Fair Work",
+                "subTitle": "Australia has strong labor laws to protect workers. The Fair Work Ombudsman ensures employees receive fair wages, proper working conditions, and protection against unfair dismissal."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "mainTitle": "491 Visa",
+        "details": [
+            {
+                "title": "Regional Visa",
+                "subTitle": "The 491 visa is a regional visa."
+            },
+            {
+                "title": "State or Family Sponsorship",
+                "subTitle": "This visa can be sponsored by a state or territory government or a family member"
+            },
+            {
+                "title": "Temporary Visa",
+                "subTitle": "The 491 visa is temporary and valid for 5 years."
+            },
+            {
+                "title": "Skilled Occupation",
+                "subTitle": "Applicants must work in an occupation listed on Australia’s skilled occupation list."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "mainTitle": "408 Visa",
+        "details": [
+            {
+                "title": "Temporary Purpose Visa",
+                "subTitle": "The 408 visa is granted to individuals participating in activities"
+            },
+            {
+                "title": "Sponsorship Required",
+                "subTitle": "To apply for this visa, a sponsor, such as an employer or organization."
+            },
+            {
+                "title": "Temporary Stay",
+                "subTitle": "This visa is temporary, typically valid for the duration of the activity."
+            },
+            {
+                "title": "Permission for Specific Activities",
+                "subTitle": "The visa grants permission for the holder to engage in defined activities within Australia."
+            }
+        ]
+    }
+]
