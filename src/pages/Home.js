@@ -10,7 +10,7 @@ const Home = () => {
   const [allRecommendations, setAllRecommendations] = useState([]);  // 전체 데이터 저장
   const [filteredRecommendations, setFilteredRecommendations] = useState([]);  // 필터링된 데이터
   const [activeCategory, setActiveCategory] = useState("ALL");
-
+  const userId = localStorage.getItem("userObjectId");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,8 +33,10 @@ const Home = () => {
     }
   };
 
-  const handleCardClick = (id) => {
-    navigate(`/detail/${id}`);
+  const handleCardClick = (id, e) => {
+    if (!e.target.closest('button')) {
+      navigate(`/detail/${id}`);
+    }
   };
 
   return (
@@ -54,12 +56,14 @@ const Home = () => {
       {/* 필터링된 추천 카드 표시 */}
       <div className={styles["card-container"]}>
         {filteredRecommendations.map((item) => (
-          <div key={item.id} onClick={() => handleCardClick(item.id)} style={{ width: "100%" }}>
+          <div key={item.id} onClick={(e) => handleCardClick(item.id, e)} style={{ width: "100%" }}>
             <InformationCard
               src={item.thumbnail}
               title={item.title}
-              subTitle={item.subTitle}
+              description={item.subTitle}
               type={item.category}
+              id={item.id}
+              userId={userId}
             />
           </div>
         ))}

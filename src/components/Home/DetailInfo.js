@@ -10,6 +10,12 @@ export default function DetailInfo() {
     const [detail, setDetail] = useState(null);
     const [otherInfo, setOtherInfo] = useState([]);
 
+    const handleCardClick = (e, info) => {
+        if (!e.target.closest('button')) {
+            navigate(`/detail/${info.id}`)
+        }
+    }
+
     useEffect(() => {
         console.log(id); // id 값 확인
 
@@ -73,7 +79,7 @@ export default function DetailInfo() {
 
                         <div className={styles.otherInfoContainer}>
                             {otherInfo.map((info) => (
-                                <div key={info.id} onClick={() => navigate(`/detail/${info.id}`)} style={{ cursor: "pointer" }}>
+                                <div key={info.id} onClick={(e) => handleCardClick(e, info)} style={{ cursor: "pointer" }}>
                                     <InformationCard
                                         id={info.id}
                                         title={info.title}
@@ -88,7 +94,7 @@ export default function DetailInfo() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
