@@ -49,14 +49,18 @@
 
 .card-container {
   padding: 0 20px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 12px;
   overflow-y: scroll;
-  max-height: 280px;
+
+  position: absolute;
+  top: 450px;
+  bottom: 92px;
+  max-height: calc(100% - 92px);
 }
+
 
 .card-container::-webkit-scrollbar-track {
   background: transparent;
