@@ -56,10 +56,10 @@ router.post("/login", async (req, res) => {
 
 // 북마크 추가/삭제 API
 router.post("/toggleBookmark", async (req, res) => {
-    const { userid, bookmark } = req.body;
+    const { userId, bookmark } = req.body;
 
     try {
-        const user = await User.findOne({ userid: userid });
+        const user = await User.findById(userId);
 
         if (!user) {
             return res.status(404).json({ message: "User not found" });
@@ -102,6 +102,7 @@ router.get('/getUserBookmarks/:userId', async (req, res) => {
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
+
         res.status(200).json(user.bookmarks); // 사용자의 북마크 목록 반환
     } catch (error) {
         console.error(error);
