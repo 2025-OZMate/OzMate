@@ -83,7 +83,7 @@ export default function DetailInfo() {
                                     <InformationCard
                                         id={info.id}
                                         title={info.title}
-                                        subTitle={info.subTitle}
+                                        description={info.subTitle}
                                         type={info.category}
                                         src={info.thumbnail}
                                     />
