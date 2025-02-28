@@ -31,7 +31,7 @@
         "id": 5,
         "thumbnail": "/images/visa.png",
         "title": "189 Visa",
-        "subTitle": "Permanent resident visa applicable solely based on personal scores, no sponsorship.",
+        "subTitle": "Permanent resident visa applicable solely based on sponsorship.",
         "category": "POLICY"
     },
     {
@@ -45,12 +45,12 @@
         "id": 7,
         "thumbnail": "/images/visa.png",
         "title": "190 Visa",
-        "subTitle": "A permanent permanent resident visa that can be applied for with state sponsorship.",
+        "subTitle": "A permanent permanent resident visa.",
         "category": "POLICY"
     },
     {
         "id": 8,
-        "thumbnail": "/images/woolworth.jpg",
+        "thumbnail": "/images/woolworth.png",
         "title": "Australian Supermarkets",
         "subTitle": "Shopping Smartly at Australian Supermarkets: Tips for Finding",
         "category": "LIFE"
@@ -64,7 +64,7 @@
     },
     {
         "id": 10,
-        "thumbnail": "/images/health-care.jpg",
+        "thumbnail": "/images/health-care.png",
         "title": "Healthcare & Pharmacies in Australia",
         "subTitle": "Navigating Healthcare & Pharmacies",
         "category": "LIFE"
@@ -78,7 +78,7 @@
     },
     {
         "id": 12,
-        "thumbnail": "/images/working.jpg",
+        "thumbnail": "/images/working.png",
         "title": "Working in Australia",
         "subTitle": "Navigating the Australian Job Market: Essential Tips for Finding Employment",
         "category": "LIFE"
