@@ -37,6 +37,7 @@ export default function FeatureCard({ title }) {
   const LogOutOk = () => {
     localStorage.removeItem("token")
     localStorage.removeItem("user")
+    localStorage.removeItem("userObjectId")
     navigate("/Login");
   };
 

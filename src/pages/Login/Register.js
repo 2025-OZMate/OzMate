@@ -15,7 +15,7 @@ export default function Registe() {
         try {
             const response = await axios.post("http://localhost:5000/auth/register", form);
             alert("회원가입 성공!");
-            window.location.href = "/login";
+            window.location.href = "/Login";
         } catch (error) {
             if (error.response) {
                 alert("Password does not match.");
