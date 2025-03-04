@@ -1,8 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Card from "../components/PracitceTest/Card"
 const titles = [
-    { subject: "English practice", title: "English translation practice", description: "You can learn expressions" },
-    { subject: "Quiz", title: "Australian Culture Quiz", description: "You can take fun quizzes about Australia!" },
+    { subject: "English Practice", title: " You can learn expressions", src: "practiceLogo" },
+    { subject: "Australia Culture Quiz", title: "You can take fun quizzes about Australia!", src: "cultureQuizImg" },
 ]
 
 const Test = () => {
@@ -15,14 +16,25 @@ const Test = () => {
             }}>
                 <img src="/images/logo.png" style={{ width: "100px", height: "24px" }}></img>
             </div>
-            {titles.map((item, index) => (
-                <Card
-                    key={index}
-                    subject={item.subject}
-                    title={item.title}
-                    description={item.description}
-                />
-            ))}
+
+            <div style={{
+                display: "flex",
+                flexDirection: "column",
+                alignContent: "center",
+                gap: "16px",
+                margin: "auto",
+                padding: "0 20px",
+                marginTop: "28px"
+            }}>
+                {titles.map((item, index) => (
+                    <Card
+                        key={index}
+                        subject={item.subject}
+                        title={item.title}
+                        src={item.src}
+                    />
+                ))}
+            </div>
 
         </div>
     )

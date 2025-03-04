@@ -1,32 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../../styles/Practice/Card.module.css";
-function Card({ subject, title, description, navigateTo }) {
+function Card({ subject, title, src, navigateTo }) {
   const navigate = useNavigate();
-
-  const handleNext = () => {
-    if (subject === "English practice") {
-      navigate("/Translation");
+  const handleNextTo = () => {
+    if (subject === "English Practice") {
+      navigate("/Translation")
     }
-    if (subject === "Quiz") {
-      navigate("/Quiz");
+    if (subject === "Australia Culture Quiz") {
+      navigate("/Quiz")
     }
-  };
+  }
   return (
-    <div className={styles.allContainer}>
-      <h2>{subject}</h2>
-
-      <div className={styles.cardContainer}>
-        <div style={{ padding: "22px 0 0 20px" }}>
-          <h3>{title}</h3>
-          <p>{description}</p>
-        </div>
-        <div style={{ padding: "0 20px" }}>
-          <div className={styles.line}></div>
-        </div>
-        <div className={styles.next}>
-          {" "}
-          <img src="/images/next.png" onClick={handleNext}></img>
+    <div className={styles.allContainer} onClick={handleNextTo}>
+      <div className={styles.contentContainer}>
+        <img src={`/images/${src}.png`} className={styles.logoImg}></img>
+        <div className={styles.titleContainer}>
+          <p style={{ fontSize: "20px", fontWeight: "500" }}>{subject}</p>
+          <p style={{ marginTop: "8px", color: "#777", fontSize: "12px" }}>{title}</p>
         </div>
       </div>
     </div>
